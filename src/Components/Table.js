@@ -185,16 +185,17 @@ const Data = () => {
         </button>
       </div>
       <table className="data-table">
-        <thead> 
-            {filteredEmployees.length === 0 ? (
-          <p className="no-data-message">No data to display</p>
-        ) :(
-          <tr className="fixed-header">
-            <th className="fixed-cell">Employee Name</th>
-            <th className="fixed-cell">Departments</th>
-            <th className="fixed-cell">Salary</th>
-            <th className="fixed-cell">Actions</th>
-          </tr>)}
+        <thead>
+          {filteredEmployees.length === 0 ? (
+            <p className="no-data-message">No data to display</p>
+          ) : (
+            <tr className="fixed-header">
+              <th className="fixed-cell">Employee Name</th>
+              <th className="fixed-cell">Departments</th>
+              <th className="fixed-cell">Salary</th>
+              <th className="fixed-cell">Actions</th>
+            </tr>
+          )}
         </thead>
         <tbody>
           {filteredEmployees.map((employee) => (

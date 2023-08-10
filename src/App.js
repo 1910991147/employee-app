@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Table from "./Components/Table";
 
@@ -6,7 +5,7 @@ function App() {
   return (
     <div>
       <div className="flex-center text-bold">Employee Info</div>
-      <Table/>
+      <Table />
     </div>
   );
 }
